@@ -36,7 +36,7 @@ The web scraping using the Selenium scraper linked above resulted in a .csv with
 
 ## Data Cleaning:
 I performed a couple of main data-cleaning tasks. All the code for these steps can be found in 'data_cleaning.py'
-### Salary Parsing:
+### 1. Salary Parsing:
 - Create a column to identify job postings with an hourly pay given
 - Remove invalid entries
 - Remove '(Glassdoor est)'
@@ -45,12 +45,25 @@ I performed a couple of main data-cleaning tasks. All the code for these steps c
 - Find maximum salary of position and store in a new column
 - Find average salary of position and store in a new column
 
-  ### Company Name:
-  Looking at the data, all companies that have ratings follow the same format. The last three characters of the company name make up the rating. We can use this knowledge to read up to the last 3 characters.
+### 2. Company Name:
+- Looking at the data, all companies that have ratings follow the same format. The last three characters of the company name make up the rating. We can use this knowledge to read up to the last 3 characters.
 
-  ### Separate State Field:
-  The state is located in the Location column. There are two parts to this (city name / location) and state. 
-  The state always comes second so we just need to split the column after the comma.
+### 3. Separate State Field:
+- The state is located in the Location column. There are two parts to this (city name / location) and state. 
+- The state always comes second so we just need to split the column after the comma.
+
+- I also determined whether or not the job location was located at the company headquarters location or not.
+
+### 4. Age of Company
+- The founding year of the company won't be as helpful to our analysis as the company age itself. To determine this, I simply detracted the founding year from the current year (2023)
+
+
+### 5. Parse Job Description
+I wanted to extract key words / skills such as Python, R, AWS, Excel and Spark etc to try and paint a picture as to what skills are most in-demand by employers.
+
+## Exploratory Data Analysis:
+
+
 
 
 
