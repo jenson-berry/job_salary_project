@@ -13,6 +13,6 @@ Repo for my data science project on job salary predictions for data scientists.
 - Used Multiple Linear Regression, Lasso and Random Forest Regression techniques for my MLMs
 
 ## Packages and resources used:
-** Python Version:3.7
-** Packages: pandas, numpy, matplotlib, seaborn, sklearn, selenium, pickle
+**Python** **Version:**3.7
+**Packages:** pandas, numpy, matplotlib, seaborn, sklearn, selenium, pickle
 ** Glassdoor Selenium Webscraper: https://mersakarya.medium.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905
