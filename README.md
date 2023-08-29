@@ -66,6 +66,29 @@ I performed a couple of main data-cleaning tasks. All the code for these steps c
 ## Exploratory Data Analysis:
 For my EDA, I created a few simple pivot tables and visualisations primarily looking at the correlation between variables (with a focus on salary)
 
+![Image of heatmap for correlation data](https://github.com/jenson-berry/job_salary_project/blob/main/correlation_heatmap.png)
+![Image of boxplot for company age and salry data](https://github.com/jenson-berry/job_salary_project/blob/main/age_salary%20boxplot.png)
+![Pivot table for job type, seniority and average salary](https://github.com/jenson-berry/job_salary_project/blob/main/salary_pivot.png)
+
+
+## Building the Model:
+I started by transforming the categorical variables present into dummy variables using pandas. I then split this dummy data into testing and training sets (test size at 20%)
+
+**Regression Models Tried:**
+- Lasso Regression
+- Multiple Linear Regression
+- Random Forest
+
+I evaluated the performance of these models using mean absolute error as outliers aren't too problematic for a model of this type.
+
+### Model Performance:
+The Random Forest model worked the best, with an MAE of 10.5 as opposed to ~18 with the other two. 
+
+
+All the code can be found in 'model_building.py'
+
+
+
 
 
 
